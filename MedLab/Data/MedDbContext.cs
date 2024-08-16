@@ -66,5 +66,6 @@ namespace MedLab.Data
         public DbSet<MedLab.Models.State> State { get; set; } = default!;
         public DbSet<MedLab.Models.RefreshToken> RefreshToken { get; set; } = default!;
         public DbSet<MedLab.Models.Test> Test { get; set; } = default!;
+        public DbSet<MedLab.Models.Callback> Callback { get; set; } = default!;
     }
 }
