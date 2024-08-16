@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\backtobackend\\medlab\\medlab\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|solutionrelative:medlab\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\backtobackend\\medlab\\medlab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|solutionrelative:medlab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\backtobackend\\medlab\\medlab\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|solutionrelative:medlab\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\backtobackend\\medlab\\medlab\\data\\meddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|solutionrelative:medlab\\data\\meddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\backtobackend\\medlab\\medlab\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|solutionrelative:medlab\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\backtobackend\\medlab\\medlab\\migrations\\20240816170247_updates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|solutionrelative:medlab\\migrations\\20240816170247_updates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\backtobackend\\medlab\\medlab\\models\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|solutionrelative:medlab\\models\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\backtobackend\\medlab\\medlab\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|solutionrelative:medlab\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\backtobackend\\medlab\\medlab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70778C29-5B3A-4A0F-B937-647840351057}|MedLab\\MedLab.csproj|solutionrelative:medlab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,6 +55,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "MedLab\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "MedLab\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAOwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T18:33:21.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MedDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Data\\MedDbContext.cs",
+              "RelativeDocumentMoniker": "MedLab\\Data\\MedDbContext.cs",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Data\\MedDbContext.cs",
+              "RelativeToolTip": "MedLab\\Data\\MedDbContext.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T18:06:21.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\appsettings.json",
+              "RelativeDocumentMoniker": "MedLab\\appsettings.json",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\appsettings.json",
+              "RelativeToolTip": "MedLab\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-16T18:01:34.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Program.cs",
+              "RelativeDocumentMoniker": "MedLab\\Program.cs",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Program.cs",
+              "RelativeToolTip": "MedLab\\Program.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAQwC4AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T06:03:30.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DBSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Data\\DBSeeder.cs",
+              "RelativeDocumentMoniker": "MedLab\\Data\\DBSeeder.cs",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Data\\DBSeeder.cs",
+              "RelativeToolTip": "MedLab\\Data\\DBSeeder.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T06:05:52.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "20240816170247_Updates.cs",
               "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Migrations\\20240816170247_Updates.cs",
               "RelativeDocumentMoniker": "MedLab\\Migrations\\20240816170247_Updates.cs",
@@ -55,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "CallbacksController.cs",
               "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Controllers\\CallbacksController.cs",
               "RelativeDocumentMoniker": "MedLab\\Controllers\\CallbacksController.cs",
@@ -63,12 +140,11 @@
               "RelativeToolTip": "MedLab\\Controllers\\CallbacksController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T17:01:27.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T17:01:27.388Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Callback.cs",
               "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Models\\Callback.cs",
               "RelativeDocumentMoniker": "MedLab\\Models\\Callback.cs",
@@ -76,12 +152,11 @@
               "RelativeToolTip": "MedLab\\Models\\Callback.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T16:53:04.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T16:53:04.809Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Test.cs",
               "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Models\\Test.cs",
               "RelativeDocumentMoniker": "MedLab\\Models\\Test.cs",
@@ -89,34 +164,7 @@
               "RelativeToolTip": "MedLab\\Models\\Test.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T09:44:19.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DBSeeder.cs",
-              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Data\\DBSeeder.cs",
-              "RelativeDocumentMoniker": "MedLab\\Data\\DBSeeder.cs",
-              "ToolTip": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Data\\DBSeeder.cs",
-              "RelativeToolTip": "MedLab\\Data\\DBSeeder.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T06:05:52.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Program.cs",
-              "RelativeDocumentMoniker": "MedLab\\Program.cs",
-              "ToolTip": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\Program.cs",
-              "RelativeToolTip": "MedLab\\Program.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T06:03:30.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T09:44:19.342Z"
             }
           ]
         }

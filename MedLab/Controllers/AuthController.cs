@@ -1,11 +1,9 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using System.Linq;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using MedLab.Models;
@@ -67,20 +65,8 @@ namespace MedLab.Controllers
             var refreshToken = GenerateRefreshToken();
             await SaveRefreshToken(user.Id, refreshToken);
 
-            Response.Cookies.Append("token", token, new CookieOptions
-            {
-                HttpOnly = true,
-                Secure = true,
-                SameSite = SameSiteMode.Strict
-            });
-
-            Response.Cookies.Append("refreshToken", refreshToken, new CookieOptions
-            {
-                HttpOnly = true,
-                Secure = true,
-                SameSite = SameSiteMode.Strict,
-                Expires = DateTime.UtcNow.AddDays(7)
-            });
+            SetTokenCookie(token);
+            SetRefreshTokenCookie(refreshToken);
 
             return Created("", new { role = user.Role.ToString(), patientId = user.Id, name = user.Name });
         }
@@ -114,20 +100,8 @@ namespace MedLab.Controllers
             var refreshToken = GenerateRefreshToken();
             await SaveRefreshToken(user.Id, refreshToken);
 
-            Response.Cookies.Append("token", token, new CookieOptions
-            {
-                HttpOnly = true,
-                Secure = true,
-                SameSite = SameSiteMode.Strict
-            });
-
-            Response.Cookies.Append("refreshToken", refreshToken, new CookieOptions
-            {
-                HttpOnly = true,
-                Secure = true,
-                SameSite = SameSiteMode.Strict,
-                Expires = DateTime.UtcNow.AddDays(7)
-            });
+            SetTokenCookie(token);
+            SetRefreshTokenCookie(refreshToken);
 
             return Created("", new { role = user.Role.ToString(), labAssistantId = user.Id, name = user.Name });
         }
@@ -146,20 +120,8 @@ namespace MedLab.Controllers
             var refreshToken = GenerateRefreshToken();
             await SaveRefreshToken(user.Id, refreshToken);
 
-            Response.Cookies.Append("token", token, new CookieOptions
-            {
-                HttpOnly = true,
-                Secure = true,
-                SameSite = SameSiteMode.Strict
-            });
-
-            Response.Cookies.Append("refreshToken", refreshToken, new CookieOptions
-            {
-                HttpOnly = true,
-                Secure = true,
-                SameSite = SameSiteMode.Strict,
-                Expires = DateTime.UtcNow.AddDays(7)
-            });
+            SetTokenCookie(token);
+            SetRefreshTokenCookie(refreshToken);
 
             return Ok(new { token = token, role = user.Role.ToString(), name = user.Name });
         }
@@ -182,20 +144,8 @@ namespace MedLab.Controllers
             var newRefreshToken = GenerateRefreshToken();
             await SaveRefreshToken(user.Id, newRefreshToken);
 
-            Response.Cookies.Append("token", newToken, new CookieOptions
-            {
-                HttpOnly = true,
-                Secure = true,
-                SameSite = SameSiteMode.Strict
-            });
-
-            Response.Cookies.Append("refreshToken", newRefreshToken, new CookieOptions
-            {
-                HttpOnly = true,
-                Secure = true,
-                SameSite = SameSiteMode.Strict,
-                Expires = DateTime.UtcNow.AddDays(7)
-            });
+            SetTokenCookie(newToken);
+            SetRefreshTokenCookie(newRefreshToken);
 
             return Ok(new { token = newToken, refreshToken = newRefreshToken });
         }
@@ -207,7 +157,8 @@ namespace MedLab.Controllers
                 new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(JwtRegisteredClaimNames.Email, user.Email),
-                new Claim(ClaimTypes.Role, user.Role.ToString())
+                new Claim(ClaimTypes.Role, user.Role.ToString()),
+                new Claim("id", user.Id.ToString())  // Adding user ID to token
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
@@ -259,6 +210,27 @@ namespace MedLab.Controllers
                 _dbContext.RefreshToken.Update(token);
                 await _dbContext.SaveChangesAsync();
             }
+        }
+
+        private void SetTokenCookie(string token)
+        {
+            Response.Cookies.Append("token", token, new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.Strict
+            });
+        }
+
+        private void SetRefreshTokenCookie(string refreshToken)
+        {
+            Response.Cookies.Append("refreshToken", refreshToken, new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.Strict,
+                Expires = DateTime.UtcNow.AddDays(7)
+            });
         }
     }
 }
