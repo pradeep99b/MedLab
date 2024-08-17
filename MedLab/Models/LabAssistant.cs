@@ -7,6 +7,11 @@ namespace MedLab.Models
     {
         [Key]
         public int LabAssistantId { get; set; }
+        
+        [Required]
+        [ForeignKey("User")]
+        public int UserId { get; set; }
+        public User? User  { get; set; }
 
         [Required(ErrorMessage = "Name is required")]
         public string? Name { get; set; }
